@@ -14,7 +14,7 @@
 <body>
 <%@ include file="../header.jsp" %>
 
-<h1>All Groups</h1>
+<h1>All Exercises</h1>
 <p>
     <a href="/addExcercise"> Add new exercise </a>
 </p>
