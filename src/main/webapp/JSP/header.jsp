@@ -15,6 +15,7 @@
         <tr>
             <td><a href="/index">Home</a></td>
             <td><a href="/groups">Groups</a></td>
+            <td><a href="/panelAdmin">Admin panel</a></td>
         </tr>
     </table>
 </p>

@@ -13,8 +13,9 @@
 </head>
 <body>
 <%@ include file="header.jsp" %>
+<a href="/groups?id=${user.group_id}">Go back to groups</a>
 
-<h1>All Groups</h1>
+<h1>All Users</h1>
 <p>
 <table>
     <tr>

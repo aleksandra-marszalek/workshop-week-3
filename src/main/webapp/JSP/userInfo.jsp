@@ -13,6 +13,7 @@
 </head>
 <body>
 <%@ include file="header.jsp" %>
+<a href="/users?id=${newUser.user_group_id}">Go back to users</a>
 <h1>Details of the user: ${newUser.username}</h1>
 <h3>E-mail: ${newUser.email}</h3>
 <h3>Solutions given: </h3>
