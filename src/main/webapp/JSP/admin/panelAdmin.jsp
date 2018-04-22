@@ -13,6 +13,7 @@
 </head>
 <body>
 <%@ include file="../header.jsp" %>
+<h1>Admin panel</h1>
 <table>
     <tr>
         <td><a href="/groupsManager">Groups manager</a></td>
@@ -21,7 +22,7 @@
         <td><a href="/usersManager">Users manager</a></td>
     </tr>
     <tr>
-        <td><a href="/excerciseManager">Excercise manager</a></td>
+        <td><a href="/excerciseManager">Exercise manager</a></td>
     </tr>
 </table>
 

@@ -1,4 +1,4 @@
-package pl.coderslab.controller;
+package pl.coderslab.controller.admin;
 
 import pl.coderslab.DbUtil;
 import pl.coderslab.model.User;
@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
 @WebServlet("/addUser")
 public class addUser extends HttpServlet {
@@ -27,11 +28,16 @@ public class addUser extends HttpServlet {
             userNew.setPassword(password);
             userNew.setUser_group_id(id);
             userNew.saveToDB(connection);
-        }  catch (Exception e) {
-            e.printStackTrace();
-        System.out.println("Error! Please try again later! "+ e.getMessage());
-    }
 
+            response.getWriter().append("User has been added successfully.");
+        }  catch (SQLException e) {
+            response.getWriter().append("Something went wrong. the user has not been added");
+        } catch (NullPointerException e) {
+            response.getWriter().append("Something went wrong. the user has not been added");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        response.getWriter().append("<br><a href='/usersManager'>Go back to user manager</a>");
 
 
 
@@ -40,7 +46,7 @@ public class addUser extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-        getServletContext().getRequestDispatcher("/JSP/addUser.jsp")
+        getServletContext().getRequestDispatcher("/JSP/admin/addUser.jsp")
                 .forward(request, response);
 
     }

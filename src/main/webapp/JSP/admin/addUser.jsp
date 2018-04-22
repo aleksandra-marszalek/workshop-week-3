@@ -6,9 +6,10 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <html>
 <head>
-    <title>Title</title>
+    <title>add user</title>
 </head>
 <body>
 <form action="/addUser" method="POST">
@@ -25,11 +26,12 @@
         <input type="text" name="password">
     </label>
     <label>
-        user id:
+        user group id:
         <input type="number" name="userId">
     </label>
     <input type="submit" value="submit">
 
 </form>
+<a href="/usersManager">Go back to users manager</a>
 </body>
 </html>

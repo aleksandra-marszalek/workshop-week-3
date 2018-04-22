@@ -22,6 +22,7 @@
     <input type="submit" value="submit">
 
 </form>
+<a href="/groupsManager">Go back to groups manager</a>
 <%@ include file="../footer.jsp" %>
 </body>
 </html>
