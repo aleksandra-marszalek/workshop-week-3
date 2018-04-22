@@ -1,4 +1,4 @@
-package pl.coderslab.controller;
+package pl.coderslab.controller.admin;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -15,7 +15,7 @@ public class panelAdmin extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        getServletContext().getRequestDispatcher("/JSP/panelAdmin.jsp")
+        getServletContext().getRequestDispatcher("/JSP/admin/panelAdmin.jsp")
                 .forward(request, response);
     }
 }

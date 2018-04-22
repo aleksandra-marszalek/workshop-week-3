@@ -12,7 +12,7 @@
     <title>Admin Panel</title>
 </head>
 <body>
-<%@ include file="header.jsp" %>
+<%@ include file="../header.jsp" %>
 <table>
     <tr>
         <td><a href="/groupsManager">Groups manager</a></td>
@@ -21,10 +21,10 @@
         <td><a href="/usersManager">Users manager</a></td>
     </tr>
     <tr>
-        <td><a href="excerciseManager">Excercise manager</a></td>
+        <td><a href="/excerciseManager">Excercise manager</a></td>
     </tr>
 </table>
 
-<%@ include file="footer.jsp" %>
+<%@ include file="../footer.jsp" %>
 </body>
 </html>
